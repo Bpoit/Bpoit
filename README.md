@@ -54,6 +54,18 @@ Tailscale mesh VPN for remote access
 
 ---
 
+## 💻 Projects
+
+PowerShell tools I've built for IT operations at work:
+
+| Repo | Description |
+|------|-------------|
+| [**imaging-toolkit**](https://github.com/Bpoit/imaging-toolkit) | GUI tool for automating Windows post-image deployment — domain joins, app installs, security agents, key management |
+| [**win11-upgrade-tool**](https://github.com/Bpoit/win11-upgrade-tool) | Toolkit for managing Windows 11 in-place upgrades — GUI and script versions for enterprise rollouts |
+| [**ldms-watchdog**](https://github.com/Bpoit/ldms-watchdog) | GUI watchdog that monitors and auto-restarts LDMS Instrument Import Console — adaptable to any Windows process |
+
+---
+
 ## 🛠️ Tools & Technologies
 
 **Infrastructure:** Proxmox VE · Docker · LXC · Kubernetes (learning)
