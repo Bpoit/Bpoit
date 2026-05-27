@@ -14,12 +14,12 @@ A full virtualized environment running Proxmox, self-hosted services, and a grow
 
 ### Compute
 
-| Host | Hardware | Role | IP |
-|------|----------|------|-----|
-| **clab-pve01** | Intel i7-13700KF / 64GB RAM / Z690 | Primary Proxmox Hypervisor | `172.16.10.233` |
-| **clab-gpu01** | AMD Ryzen 9 3950X / 32GB RAM / RTX 3080 | Gaming & GPU Workloads | `172.16.10.235` |
-| **clab-k8-01** | Lenovo M80q / 16GB RAM | Kubernetes Control Plane | `172.16.10.234` |
-| **K8s Workers** | 6x Lenovo M715q (planned) | Kubernetes Worker Nodes | — |
+| Host | Hardware | Role |
+|------|----------|------|
+| **clab-pve01** | Intel i7-13700KF / 64GB RAM / Z690 | Primary Proxmox Hypervisor |
+| **clab-gpu01** | AMD Ryzen 9 3950X / 32GB RAM / RTX 3080 | Gaming & GPU Workloads |
+| **clab-k8-01** | Lenovo M80q / 16GB RAM | Kubernetes Control Plane |
+| **K8s Workers** | 6x Lenovo M715q (planned) | Kubernetes Worker Nodes |
 
 ### Networking
 
