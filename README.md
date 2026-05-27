@@ -29,7 +29,6 @@ A full virtualized environment running Proxmox, self-hosted services, and a grow
 | **Cisco Catalyst 3850** | Managed Switch |
 | **Synology DS920+** | NAS (~15TB) |
 
-**VLANs:** `10` Home &nbsp;·&nbsp; `20` Servers &nbsp;·&nbsp; `30` IoT &nbsp;·&nbsp; `99` Management
 
 ### Virtualized Services (Proxmox LXC)
 
