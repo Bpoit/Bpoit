@@ -1,8 +1,8 @@
 # Hey, I'm Chris 👋
 
-**IT Professional | DevOps Enthusiast | Homelab Builder**
+**IT Professional | DevOps Learner | Homelab Builder | Automation-Focused Problem Solver**
 
-I work in IT at [Titan America](https://www.titanamerica.com) and spend my free time building out my homelab, learning DevOps, and gaming on Linux.
+I work in IT at [Titan America](https://www.titanamerica.com) and spend my free time building practical infrastructure, learning DevOps, automating support workflows, and experimenting with self-hosted AI.
 
 🌐 [b-clarke.com](https://b-clarke.com) &nbsp;|&nbsp; 🎮 [bpoit.tech](https://bpoit.tech)
 
@@ -10,47 +10,24 @@ I work in IT at [Titan America](https://www.titanamerica.com) and spend my free 
 
 ## 🏠 ClarkesLAB — My Homelab
 
-A full virtualized environment running Proxmox, self-hosted services, and a growing Kubernetes cluster.
+ClarkesLAB is my hands-on learning environment for infrastructure, networking, automation, monitoring, and AI. It is built around real services I use and maintain, not just lab demos.
 
-### Compute
+### What I’m Building
 
-| Host | Hardware | Role |
-|------|----------|------|
-| **clab-pve01** | Intel i7-13700KF / 64GB RAM / Z690 | Primary Proxmox Hypervisor |
-| **clab-gpu01** | AMD Ryzen 9 3950X / 32GB RAM / RTX 3080 | Gaming & GPU Workloads |
-| **clab-k8-01** | Lenovo M80q / 16GB RAM | Kubernetes Control Plane |
-| **K8s Workers** | 6x Lenovo M715q (planned) | Kubernetes Worker Nodes |
+- **Virtualization:** Proxmox-based compute for Linux services, WordPress, databases, dashboards, and automation tools
+- **Networking:** OPNsense firewalling, Cisco switching, segmented network design, DNS, reverse proxying, and secure remote access
+- **Kubernetes:** Talos Linux Kubernetes lab with worker nodes, ingress, Longhorn storage, and self-hosted apps like n8n
+- **Monitoring:** Uptime Kuma and LibreNMS for service status, network visibility, switch health, and alerting through Discord
+- **Web Hosting:** WordPress and Ghost sites behind Nginx Proxy Manager, Cloudflare, and local DNS
+- **AI & Automation:** Hermes Agent, Open WebUI/Ollama, workflow automation, and self-hosted AI experiments
 
-### Networking
+### Current Focus Areas
 
-| Device | Role |
-|--------|------|
-| **OPNsense** (Lenovo M720q) | Firewall / Router |
-| **Cisco Catalyst 3850** | Managed Switch |
-| **Synology DS920+** | NAS (~15TB) |
-
-
-### Virtualized Services (Proxmox LXC)
-
-| VMID | Container | Purpose |
-|------|-----------|---------|
-| 105 | `homepage` | Dashboard |
-| 106 | `pihole` | DNS Ad-Blocking & Local DNS |
-| 107 | `mariadb` | Database Server |
-| 108 | `nginxproxymanager` | Reverse Proxy & SSL |
-| 109 | `b-clarke-wordpress` | [b-clarke.com](https://b-clarke.com) — IT Consulting Site |
-| 110 | `cloudflare-tunnel` | Secure External Access |
-| 111 | `ghost` | [goinggrey.info](https://goinggrey.info) — Ghost Blog |
-| 112 | `hermes-agent` | AI Assistant (Hermes + Tailscale) |
-| 113 | `bpoit-wordpress` | [bpoit.tech](https://bpoit.tech) — Gaming Community |
-
-### Network Architecture
-
-```
-Internet → Cloudflare Tunnel (LXC 110) → Nginx Proxy Manager (LXC 108) → Backend Services
-PiHole (LXC 106) handles local DNS resolution for all domains
-Tailscale mesh VPN for remote access
-```
+- Building a cleaner, better-monitored homelab foundation
+- Expanding Kubernetes and n8n automation skills
+- Improving documentation, alerting, backups, and repeatable operations
+- Learning DevOps practices through real infrastructure projects
+- Using AI agents to help operate and document home and work systems
 
 ---
 
@@ -60,29 +37,31 @@ PowerShell tools I've built for IT operations at work:
 
 | Repo | Description |
 |------|-------------|
-| [**imaging-toolkit**](https://github.com/Bpoit/imaging-toolkit) | GUI tool for automating Windows post-image deployment — domain joins, app installs, security agents, key management |
-| [**win11-upgrade-tool**](https://github.com/Bpoit/win11-upgrade-tool) | Toolkit for managing Windows 11 in-place upgrades — GUI and script versions for enterprise rollouts |
-| [**ldms-watchdog**](https://github.com/Bpoit/ldms-watchdog) | GUI watchdog that monitors and auto-restarts LDMS Instrument Import Console — adaptable to any Windows process |
+| [**imaging-toolkit**](https://github.com/Bpoit/imaging-toolkit) | GUI tool for automating Windows post-image deployment tasks such as domain joins, app installs, security agents, and key management |
+| [**win11-upgrade-tool**](https://github.com/Bpoit/win11-upgrade-tool) | Toolkit for managing Windows 11 in-place upgrades with GUI and script options for enterprise rollout support |
+| [**ldms-watchdog**](https://github.com/Bpoit/ldms-watchdog) | GUI watchdog that monitors and auto-restarts a Windows process; originally built for LDMS import console reliability |
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-**Infrastructure:** Proxmox VE · Docker · LXC · Kubernetes (learning)
-**Networking:** OPNsense · Cisco IOS · VLANs · Cloudflare · Tailscale · Nginx Proxy Manager
-**Platforms:** Linux (daily driver — Bazzite) · Windows
-**Web:** WordPress · Ghost · Astra · GeneratePress
-**IT Admin:** ServiceNow · Lansweeper · KACE · SmartDeploy · Citrix/Igel · Office 365
-**AI/Automation:** Hermes Agent · Self-hosted AI workflows
+**Infrastructure:** Proxmox VE · Linux · LXC · Docker · Kubernetes · Talos Linux  
+**Networking:** OPNsense · Cisco IOS · DNS · Nginx Proxy Manager · Cloudflare · Tailscale  
+**Monitoring:** Uptime Kuma · LibreNMS · SNMP · Discord alerts  
+**Web:** WordPress · Ghost · Astra · GeneratePress · Nginx  
+**Automation:** PowerShell · Bash · n8n · Hermes Agent  
+**AI:** Open WebUI · Ollama · self-hosted AI workflows  
+**IT Admin:** ServiceNow · Lansweeper · KACE · SmartDeploy · Citrix/Igel · Microsoft 365
 
 ---
 
 ## 🎯 What I'm Working On
 
-- 🔧 Expanding my Kubernetes cluster with 6 worker nodes
-- 📈 Building DevOps skills and automating my homelab
-- 🎮 Running a gaming community at [bpoit.tech](https://bpoit.tech) with CubeCoders AMP
-- 🤖 Self-hosting AI tools and building automation workflows
+- 📈 Building a more production-like monitoring and alerting stack for my homelab
+- ☸️ Bringing Kubernetes, Longhorn, ingress, and n8n into a cleaner operating state
+- 🤖 Exploring self-hosted AI tools and AI-assisted operations
+- 🧰 Improving my PowerShell tools and IT automation workflows
+- 🧭 Growing toward DevOps and infrastructure engineering roles
 
 ---
 
